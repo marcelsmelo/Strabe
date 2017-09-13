@@ -1,0 +1,13 @@
+{
+    "TII1": [
+        { "sigla": "Trabalho_Tabelas", "nome": "Trabalho Tabelas" },
+        { "sigla": "Trabalho_Listas_Links", "nome": "Trabalho Listas e Links" }
+    ],
+    "3TII": [
+        { "sigla": "Trabalho_Lista_APP", "nome": "Trabalho Lista App" },
+        { "sigla": "Trabalho_Comunicação_Sistemas", "nome": "Trabalho Comunicação Sistemas" }
+    ],
+    "6TSI": [
+        { "sigla": "Trabalho_Test", "nome": "Trabalho Teste" }
+    ]
+}

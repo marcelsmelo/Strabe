@@ -1,0 +1,51 @@
+<h2>Submissão de trabalho</h2>
+ <div class="row center">
+    <form class="col s8 formulario offset-s2" method="post" action="/"  enctype="multipart/form-data">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="icon_prefix" type="text" class="validate" name="matricula">
+          <label for="icon_prefix">Número de matrícula:</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="icon_prefix" type="text" class="validate" name="nome">
+          <label for="icon_prefix">Nome Completo:</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+              <select name="turma" id="selectTurma">
+              <option value="">Escolha uma opção</option>
+              {{#each turmas}}
+                <option value="{{this.sigla}}">{{this.nome}}</option>
+              {{/each}}
+              </select>
+              <label>Selecione sua Turma:</label>
+          </div>
+       </div>
+        <div class="row">
+          <div class="input-field col s12">
+              <select name="trabalho" id="selectTrabalho">
+              <option value="">Escolha uma opção</option>
+              
+              </select>
+              <label>Selecione um Trabalho:</label>
+          </div>
+       </div>
+       <div class="row">
+          <div class="file-field input-field col s12">
+              <div class="btn">
+                  <span>File</span>
+                  <input type="file" name="file">
+              </div>
+              <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+              </div>
+          </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </form>
+    </div>

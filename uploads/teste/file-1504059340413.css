@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+thead th {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+tbody td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(151, 145, 145, 0.25);
+}
+
+tbody tr:hover {
+    background-color: black;
+    color: white;
+}
+
+tbody .turma:hover {
+    background-color: white;
+    color: black;
+}
