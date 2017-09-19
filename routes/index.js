@@ -3,7 +3,9 @@ module.exports = (app) => {
     const controller = require('../controllers/index.js');
 
     /* GET home page. */
-    app.get('/', controller.index);
-    app.post('/', multerConfig.single('file'), controller.fileUpload);
-    app.get('/tasks', controller.tasks);
+    app.get('/strabe/', controller.index);
+    app.post('/strabe/', multerConfig.single('file'), controller.fileUpload);
+    app.get('/strabe/tasks', controller.tasks);
+    app.get('/carros/esportivos', controller.esportivos);
+    app.get('/carros/classicos', controller.classicos);
 }

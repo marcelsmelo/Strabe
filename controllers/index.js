@@ -1,9 +1,9 @@
 module.exports = {
-    index: (req, res, next) => {
+    index: (req, res) => {
         const t = require('../turmas.json')
         res.render('index', { turmas: t });
     },
-    fileUpload: (req, res, next) => {
+    fileUpload: (req, res) => {
         //req.body.nome
         //req.body.turma
         //req.file.trabalho
@@ -12,7 +12,7 @@ module.exports = {
         logger.debug('[IndexController]', 'Form file', req.file);
         res.status(200);
     },
-    tasks: (req, res, next) => {
+    tasks: (req, res) => {
         console.log(req.query.turma)
         let trabalhos = require('../trabalhos.json')
         let trab = {}
@@ -21,7 +21,15 @@ module.exports = {
         } else trab = {}
         console.log(trab)
         res.status(200).json({ tasks: trab })
+    },
+    esportivos: (req, res) => {
+        let resposta = require('../esportivos.json');
+        res.status(200).json(resposta);
+    },
+    classicos: (req, res) => {
+        let resposta = require('../classicos.json');
+        res.status(200).json(resposta);
+    },
 
-    }
 
 }
